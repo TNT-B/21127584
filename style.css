@@ -1,0 +1,363 @@
+@font-face {
+    font-family: NeueHaasGrotesk;
+    src: url('./data/neue-haas-groteskfont/NHaasGroteskDSPro-65Md.otf');
+  }
+  @font-face {
+    font-family: NeueHaasGrotesk-thin;
+    src: url('./data/neue-haas-groteskfont/NHaasGroteskDSPro-55Rg.otf');
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+font-family: 'NeueHaasGrotesk', sans-serif;
+background-color:grey;
+
+}
+.container{
+    max-width: 100%;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/* HEADER BAR CSS */
+header{
+   padding: 30px 30px;
+ display: flex;
+ width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+ position:fixed;
+    box-sizing: border-box;
+    max-width: 1500px;
+   z-index: 999;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    background-color: rgba(138, 137, 137, 0.3);
+    border-radius: 50px;
+    height: 40px;
+    
+    
+}
+.Nav-item{
+  
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 3px;
+    font-size: 15px;
+    line-height: 1.35rem;
+    letter-spacing: .025em;
+    box-sizing: border-box;
+    margin: 0px;
+  
+
+}
+.Nav-item a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 14px;
+    padding-top:5px;
+cursor: pointer;}
+
+.logoNav{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    background-color: #e5e7eb;
+    margin-top: -1px;
+}
+.svglogo{
+    margin: 8px 7px;
+}
+.booking{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+.Nav-item:hover{
+    background-color:  rgba(177, 175, 175, 0.3);
+    border-radius: 9999px;
+
+}
+path{
+    fill:white;
+}
+.booking--button--wrap{
+position: relative;
+margin-top: -8px;
+}
+.booking--button--wrap--bt{
+    font-family: 'NeueHaasGrotesk', sans-serif;
+display: block;
+font-size: 15px;
+line-height: 32px;
+font-weight: 300;
+padding: 8px 16px;
+background-color: white;
+color: black;
+border-radius: 50px;
+border: 0px;
+cursor: pointer;
+}
+.booking--button--wrap--btbg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+    background-size: 600% 600%;
+    border-radius: 50px;
+    animation: AnimateBorder 4s ease infinite;
+    -webkit-animation: AnimateBorder 4s ease infinite;
+    -moz-animation: AnimateBorder 4s ease infinite;
+    z-index: -1;
+    transform: translate(-2px, -2px);
+    transition: filter 0.7s ease-in;
+}
+.booking--button--wrap:hover .booking--button--wrap--btbg {
+    filter: blur(10px);
+    transition: filter .2s ease-in;
+  }
+  @-webkit-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* ********************************************* */
+/* *****MAIN**** */
+main{
+    width: 100%;
+    flex-direction: column;
+   position: relative;
+}
+
+/* SECTION 1 CSS*/
+.sec1{
+   height: 1500px;
+    /* max-width: 1500px; */
+    top:0;
+    right: 0;
+    z-index: 2;
+   height: 1500px;
+   
+  
+
+}
+#sec1--video{
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9999;
+   position: fixed;
+    left: 0;
+    top: 0;
+}
+.aniSpan{
+    color:white;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: NeueHaasGrotesk-thin;
+    
+}
+.sec1--whiteText{
+position: fixed;
+top: 200px;
+left: 150px;
+    
+    
+}
+/* SECTION 2 CSS*/
+.sec2{
+   
+    width: 100%;
+    height: auto;
+    background-image: url('/data/videos/294665880_568773964751760_5942150832399932886_n.jpg');
+    z-index: 3;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  position: sticky;
+  top:0px;
+  border-radius: 3% 3%;
+  box-shadow: 3px -3px 5px rgb(53, 44, 44);
+  display: flex;
+  flex-direction: column;
+  gap:600px;
+ 
+  
+}
+.sec2whiteText {
+transform: translate(150px,200px);
+}
+.sec2--des{
+    width: 350px;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 150px;
+    padding-bottom: 500px;
+    
+}
+.sec2--des p{
+    font-size: 20px;
+    color: azure;
+    background-color: rgba(167, 164, 164, 0.514);
+}
+
+/* Discover the Spaceship button in section 2 */
+.sec2--button--wrap{
+    position: relative;
+    margin-top: 0px;
+    width: 185px;
+    }
+    .sec2--button--wrap--bt{
+        font-family: 'NeueHaasGrotesk', sans-serif;
+    display: block;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 300;
+    padding: 8px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    }
+    .sec2--button--wrap--btbg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+        background-size: 600% 600%;
+        border-radius: 50px;
+        animation: AnimateBorder 4s ease infinite;
+        -webkit-animation: AnimateBorder 4s ease infinite;
+        -moz-animation: AnimateBorder 4s ease infinite;
+        z-index: -1;
+        transform: translate(-2px, -2px);
+        transition: filter 0.7s ease-in;
+    }
+    .sec2--button--wrap:hover .sec2--button--wrap--btbg {
+        filter: blur(10px);
+        transition: filter .2s ease-in;
+      }
+      @-webkit-keyframes AnimateBorder {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimateBorder {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimateBorder {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+    .sec3{
+        position: relative;
+    width: 100%;
+    
+position: sticky;
+  top:0px;
+  border-radius: 3%;
+  
+  display: flex;
+  flex-direction: column;
+  gap:600px;
+  
+z-index: 5;
+
+
+}
+#sec3--video{
+    /* position:fixed; */
+    min-width: 100%;
+    min-height: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    z-index: -3;
+}
+.sec3--button--wrap{
+    position: relative;
+    margin-top: 0px;
+    width: 202px;
+    }
+    .sec3--button--wrap--bt{
+        font-family: 'NeueHaasGrotesk', sans-serif;
+    display: block;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 300;
+    padding: 8px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    }
+    .sec3--button--wrap--btbg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+        background-size: 600% 600%;
+        border-radius: 50px;
+        animation: AnimateBorder 4s ease infinite;
+        -webkit-animation: AnimateBorder 4s ease infinite;
+        -moz-animation: AnimateBorder 4s ease infinite;
+        z-index: -1;
+        transform: translate(-2px, -2px);
+        transition: filter 0.7s ease-in;
+    }
+    .sec3--button--wrap:hover .sec3--button--wrap--btbg {
+        filter: blur(10px);
+        transition: filter .2s ease-in;
+      }
+      @-webkit-keyframes AnimateBorder {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimateBorder {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimateBorder {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    .sec3whiteText {
+        transform: translate(150px,200px);
+        }
